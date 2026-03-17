@@ -14,9 +14,17 @@ const player = new RetroPlayer();
 const IS_NATIVE = Capacitor.isNativePlatform();
 
 const DEMO_TRACKS = [
-  { id: 'crazy-good',    label: 'Crazy Good',    artist: 'KBD Trio',  artistUrl: 'https://kbdtrio.com',  url: './audio/crazy-good.mp3',    default: true },
-  { id: 'modern-choir',  label: 'Modern Choir',  artist: 'POUROVER',  artistUrl: 'https://pourover.me',  url: './audio/modern-choir.mp3' },
-  { id: 'german-techno', label: 'German Techno', artist: 'POUROVER',  artistUrl: 'https://pourover.me',  url: './audio/german-techno.mp3' },
+  { id: 'crazy-good',          label: 'Crazy Good',                      artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/crazy-good.mp3',         default: true },
+  { id: 'funk49',              label: 'The One From That Night',          artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/funk49.mp3' },
+  { id: 'oh-snap',             label: 'Load-Bearing Groove',             artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/oh-snap.mp3' },
+  { id: 'tk3-04-remix',        label: 'Version Four Is Actually Better', artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/tk3-04-remix.mp3' },
+  { id: 'frunk',               label: 'Confidence At 130% Capacity',     artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/frunk.mp3' },
+  { id: 'track-04',            label: 'Still Going',                     artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/track-04.mp3' },
+  { id: 'track-03',            label: 'The Third Thing',                 artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/track-03.mp3' },
+  { id: 'counter-operation',   label: 'Unsolicited Expert Opinion',      artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/counter-operation.mp3' },
+  { id: 'tk3-01-remix',        label: 'They Sent Notes, We Sent This',   artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/tk3-01-remix.mp3' },
+  { id: 'oh-shit',             label: 'Wrong Room, Right Energy',        artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/oh-shit.mp3' },
+  { id: 'something-different', label: 'Different In All The Right Ways', artist: 'KBD Trio', artistUrl: 'https://kbdtrio.com', url: './audio/something-different.mp3' },
 ];
 
 // Montgomery Ward catalog item numbers
