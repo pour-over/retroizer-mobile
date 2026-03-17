@@ -1,0 +1,17 @@
+{
+  "allowlist": [
+    "."
+  ],
+  "ignore": [
+    "**/.blitz/**",
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/ios/App/CapApp-SPM/**",
+    "**/android/gradle/**",
+    "**/android/.gradle/**",
+    "**/*.log",
+    "**/.DS_Store",
+    "**/audio/**"
+  ]
+}
