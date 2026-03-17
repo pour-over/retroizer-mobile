@@ -346,6 +346,21 @@ export default function App() {
           </div>
         </div>
 
+        {/* ── PLAY / STATUS ─ directly under source input ── */}
+        <div className="controls controls-top">
+          <button
+            className={`btn-play${playState === 'playing' ? ' playing' : ''}`}
+            onClick={handlePlay}
+            disabled={!loaded}
+          >
+            {playState === 'playing' ? '■ Stop' : '▶ Preview'}
+          </button>
+        </div>
+        <div className="status-bar status-bar-top">
+          <div className={`status-dot${statusState === 'active' ? ' active' : statusState === 'error' ? ' error' : ''}`} />
+          <span>{statusText}</span>
+        </div>
+
           <div className="demo-tracks">
             <span className="demo-tracks-label">— or try a demo —</span>
             <div className="demo-track-btns">
@@ -477,6 +492,23 @@ export default function App() {
           <div className="status-bar">
             <div className={`status-dot${statusState === 'active' ? ' active' : statusState === 'error' ? ' error' : ''}`} />
             <span>{statusText}</span>
+          </div>
+        </div>
+
+        {/* ── EXPORT ────────────────────────────────────── */}
+        <div className="panel">
+          <div className="panel-label">
+            <span>◈ Export</span>
+            <span className="panel-cat">§ 14.2</span>
+          </div>
+          <div className="controls">
+            <button
+              className="btn-export"
+              onClick={handleExport}
+              disabled={!loaded || exporting}
+            >
+              {exporting ? 'Rendering...' : '⬆ Share WAV'}
+            </button>
           </div>
         </div>
 

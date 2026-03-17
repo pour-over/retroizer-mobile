@@ -1025,3 +1025,11 @@ body {
     height: 44px;
   }
 }
+
+/* ── Play button at top, directly under source input ── */
+.controls-top {
+  margin: 0.6rem 0 0.2rem;
+}
+.status-bar-top {
+  margin-bottom: 0.8rem;
+}
